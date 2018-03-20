@@ -132,4 +132,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  background: mediumvioletred; }
+  background: #d0d1da; }
+
+h1, h2, ul, li, p, a {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
