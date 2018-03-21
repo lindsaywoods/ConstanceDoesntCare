@@ -132,9 +132,45 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  background: #d0d1da; }
+  background: #30343f; }
 
 h1, h2, ul, li, p, a {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+h1 {
+  font-family: "Cormorant", sans-serif; }
+
+p {
+  font-family: "Quattrocento Sans", sans-serif; }
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+header {
+  background: linear-gradient(rgba(131, 137, 199, 0.2), rgba(131, 137, 199, 0.2)), url("/styles/images/headerplaceholder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    background: #30343f; }
+  header a {
+    text-decoration: none;
+    color: #97a0ae;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1.5px; }
+
+.CDClogo {
+  max-width: 80%;
+  margin-left: -10%;
+  position: relative;
+  bottom: 50%; }
