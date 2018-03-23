@@ -141,7 +141,6 @@ footer {
 .galleryall {
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid mediumvioletred;
   max-width: 90%;
   margin: 0 auto;
   justify-content: space-between; }
@@ -212,6 +211,15 @@ nav ul {
   border-color: #adb2c1;
   margin: 0 auto; }
 
+.flexContainer {
+  display: flex;
+  justify-content: center; }
+
+.sectionBoth {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 100px; }
+
 .borderInside {
   border: 1px solid;
   border-color: #adb2c1;
@@ -220,12 +228,25 @@ nav ul {
   margin: 0 auto;
   margin-top: 4px; }
 
-.about {
-  top: 1px;
-  width: 500px;
-  position: absolute;
-  left: 10%;
-  top: 35%; }
+.sectionSVG {
+  position: absolute; }
 
-.aboutBoth {
-  position: relative; }
+.about {
+  width: 500px;
+  left: -40%;
+  top: 36%; }
+
+.process {
+  width: 550px;
+  left: -28%;
+  top: 2%; }
+
+.completedWork {
+  width: 700px;
+  left: -62%;
+  top: 1%; }
+
+.contact {
+  width: 500px;
+  left: -30%;
+  top: 18%; }
