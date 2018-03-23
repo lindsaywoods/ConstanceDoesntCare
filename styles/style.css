@@ -131,8 +131,33 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+footer {
+  background: linear-gradient(rgba(131, 137, 199, 0.35), rgba(131, 137, 199, 0.35)), url("/styles/images/footer.jpg");
+  padding: 150px 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 15px solid white; }
+
+.galleryall {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid mediumvioletred;
+  max-width: 90%;
+  margin: 0 auto;
+  justify-content: space-between; }
+  .galleryall img {
+    margin: 10px;
+    max-width: 200px; }
+
+.item {
+  display: flex;
+  flex-direction: column; }
+
+.hidden {
+  visibility: hidden; }
+
 body {
-  background: #30343f; }
+  background: white; }
 
 h1, h2, ul, li, p, a {
   padding: 0;
@@ -156,11 +181,8 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
-  header ul {
-    display: flex;
-    justify-content: space-around;
-    background: #30343f; }
+  justify-content: flex-end;
+  border: 15px solid white; }
   header a {
     text-decoration: none;
     color: #97a0ae;
@@ -171,6 +193,39 @@ header {
 
 .CDClogo {
   max-width: 80%;
-  margin-left: -10%;
   position: relative;
   bottom: 50%; }
+
+nav svg {
+  stroke-width: 3px;
+  margin-top: 10px; }
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.border {
+  width: 300px;
+  height: 90px;
+  border: 1px solid;
+  border-color: #adb2c1;
+  margin: 0 auto; }
+
+.borderInside {
+  border: 1px solid;
+  border-color: #adb2c1;
+  width: 290px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 4px; }
+
+.about {
+  top: 1px;
+  width: 500px;
+  position: absolute;
+  left: 10%;
+  top: 35%; }
+
+.aboutBoth {
+  position: relative; }

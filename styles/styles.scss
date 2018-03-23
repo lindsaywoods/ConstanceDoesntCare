@@ -1,8 +1,11 @@
 @import "setup";
 @import "footer";
-@import "header";
+@import "gallery";
 @import "variables";
 
+.hidden {
+    visibility: hidden;
+}
 
 body {
     background: $backgroundColour;
@@ -38,12 +41,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    ul {
-        display: flex;
-        justify-content: space-around;
-        // padding: 0 5% 0 10%;
-        background: $backgroundColour;
-    }
+    border: 15px solid $backgroundColour;
     a {
         text-decoration: none;
         color: $mainLight;
@@ -57,17 +55,53 @@ header {
 
 .CDClogo {
     max-width: 80%;
-    margin-left: -10%;
-    // padding-top: 1%;
     position: relative;
     bottom: 50%;
 }
 
-.about {
-    // width: 200px;
+nav {
+    svg {
+        // fill: cyan;
+        // stroke: darkcyan;  
+        stroke-width: 3px;
+        margin-top: 10px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
+.border {
+    width: 300px;
+    height: 90px;
+    border: 1px solid; 
+    border-color: lighten(#30343f, 50);
+    margin: 0 auto;
+    // position: absolute;
+}
 
+.borderInside {
+    border: 1px solid;
+    border-color: lighten(#30343f, 50);
+    width: 290px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+.about {
+    top: 1px;
+    width: 500px;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+
+.aboutBoth {
+    position: relative;
+}
 
 
 
