@@ -150,7 +150,12 @@ footer {
 
 .item {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  padding-bottom: 20px; }
+  .item img {
+    margin-bottom: 20px; }
 
 .hidden {
   visibility: hidden; }
@@ -233,7 +238,7 @@ nav ul {
 
 .about {
   width: 500px;
-  left: -40%;
+  left: -38%;
   top: 36%; }
 
 .process {
@@ -250,3 +255,6 @@ nav ul {
   width: 500px;
   left: -30%;
   top: 18%; }
+
+img {
+  max-width: 300px; }
