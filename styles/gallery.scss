@@ -6,7 +6,7 @@
     justify-content: space-between;
     img {
         margin: 10px;
-        max-width: 200px;
+        // width: 30%;
         
     }
 }
@@ -21,4 +21,14 @@
     img {
         margin-bottom: 20px;        
     }
+    p {
+        text-align: center;
+    }
+}
+
+.lb-caption {
+    font-family: $copyFont;
+    // font-family: $headerFont;
+    letter-spacing: .75px;
+    text-align: center;
 }
