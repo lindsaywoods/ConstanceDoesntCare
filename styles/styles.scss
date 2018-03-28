@@ -2,6 +2,7 @@
 @import "footer";
 @import "gallery";
 @import "variables";
+@import "process";
 
 .hidden {
     visibility: hidden;
@@ -11,7 +12,7 @@ body {
     background: $backgroundColour;
 }
 
-h1, h2, ul, li, p, a {
+h1, h2, h3,  ul, li, p, a {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -19,6 +20,13 @@ h1, h2, ul, li, p, a {
 
 h1 {
     font-family: $headerFont;
+}
+
+h3 {
+    font-family: $copyFont;
+    font-weight: lighter;
+    // font-family: $headerFont;
+    // text-transform: uppercase;
 }
 
 p {
@@ -139,26 +147,7 @@ nav {
     top: 18%
 }
 
-.processSection {
-    img {
-        max-width: 50%;
-        // display: flex;
-        flex-wrap: wrap;
-        margin: 10px;
-        padding: 10px;
-        // border: 1px solid $black;
-        box-shadow: inset 0 0 8px 8px;
-        border-radius: 5px;
-    }
-}
 
-.frames {
-    background-image: url("/styles/images/process/shelves.jpg");
-    width: 300px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-image: contain;
-    
-}
+
 
 
