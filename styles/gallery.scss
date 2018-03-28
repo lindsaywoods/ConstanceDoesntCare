@@ -1,25 +1,24 @@
 .galleryall {
     display: flex;
     flex-wrap: wrap;
-    max-width: 90%;
-    margin: 0 auto;
-    justify-content: space-between;
-    img {
-        margin: 10px;
-        // width: 30%;
-        
-    }
+    justify-content: center;
 }
 
+.gallery {
+}
 
 .item {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     margin: 10px;
     padding-bottom: 20px;
+    max-width: 30%;
     img {
-        margin-bottom: 20px;        
+        max-width: 300px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 10px;
     }
     p {
         text-align: center;
