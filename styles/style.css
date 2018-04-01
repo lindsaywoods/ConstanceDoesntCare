@@ -315,7 +315,7 @@ nav ul {
 .left, .right {
   display: flex;
   flex-direction: column;
-  border: 3px solid mediumvioletred;
+  border: 3px solid blue;
   width: 50%;
   margin: 10px; }
 
