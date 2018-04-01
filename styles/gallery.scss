@@ -4,21 +4,21 @@
     justify-content: center;
 }
 
-.gallery {
+.completedSection {
+    margin-top: 100px;
 }
 
 .item {
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     margin: 10px;
     padding-bottom: 20px;
-    max-width: 30%;
     img {
-        max-width: 300px;
+        width: 330px;
         padding: 5px;
         border: 1px solid black;
-        margin: 10px;
+        position: relative;
+        z-index: -1;
     }
     p {
         text-align: center;

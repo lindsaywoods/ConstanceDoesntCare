@@ -7,6 +7,7 @@
     <title>Constance Doesn't Care</title>
     <link href="https://fonts.googleapis.com/css?family=Cormorant:400,700|Quattrocento+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/flickity/css/flickity.css" media="screen">
     <link rel="stylesheet" href="/node_modules/lightbox2/dist/css/lightbox.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -91,101 +92,48 @@
                 </a>
             </div>
         </div>
-        <div class="processSection">
-            <div class="flex shopping">
+
+        <!-- beginning of process section -->
+
+        <div class="processSection main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": true, "wrapAround": true }'>
+            <div class="flex shopping carousel-cell">
+                <h3 class="step">wander the city <br> searching for frames</h3>
                 <div class=" processImage">
                     <img src="/styles/images/process/alice-donovan-rouse-187267.jpg" alt="">
                 </div>
-                <div class="subtitle">
-                    <div class="svgNumber one">
-                        <svg class="one" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 483 568">
-                            <path d="M325.6 2.5c-28 4.6-58.8 17.4-88.3 36.6-11.6 7.7-13.2 8.4-26.1 12-18.4 5-26.5 8.1-40.2 14.9-31.8 16-53.6 32.6-77.7 59.2-14.6 16.1-20 22.9-29.3 37-19.8 29.7-38.3 69.8-48.3 104.3C4.4 305.6.2 340 1.3 385.5c1 42.2 6.2 70.4 18.2 99 14.2 34.1 33 55.7 60.4 69.4 18.6 9.4 33.3 12.6 57.6 12.5 39.6-.1 79.4-11.3 127-35.8 40.1-20.6 74-45.3 106.3-77.5 26.7-26.6 46.6-54.2 69-95.6 37-68.4 48.3-128.5 38.6-205-6-47.8-21.7-84-48.2-111.7-24.9-25.9-51-38.4-82.2-39.3-8.9-.3-16.5 0-22.4 1zM369.8 7c10.4 2.7 20.5 6.8 28.5 11.6 16.6 10 35 27.5 45.9 43.8 12.6 18.9 23.3 45.2 27.7 68 4.8 24.8 6.5 42.7 6.5 70.6.1 31.2-1.8 46.3-8.9 74.6-5.6 22.2-12.5 40.4-24 63.9-22.5 45.9-44 77.6-72.4 106.8-35.1 36-68.9 60.9-112.7 83.1-68.2 34.6-129.9 43.4-173.3 24.8C43 535.1 15.6 490.1 6.3 421.1c-2.1-15.7-2.5-74.8-.5-90.6 5.8-46.8 17.4-85.6 38.2-127.3 19.8-39.6 36-61.7 68.2-92.7 7.4-7.2 17-15.5 21.4-18.7 18.7-13.3 44.8-27.3 60.9-32.7 9.3-3.1 24.1-7.3 23.4-6.7-.2.2-5.1 4.1-10.9 8.7-22 17.4-39.8 34.2-58.8 55.4-20.7 23-49.2 58-49.2 60.4 0 2.6 2.4.6 8.7-7.6C145.6 120.5 180.5 84.6 217 57c9.6-7.3 13-8.5 29.4-10 12.6-1.2 14-1.6 13.1-3.1-.7-1.1-13.5-.5-22.2 1.1-2.4.4-4.3.6-4.3.5 0-.9 25.2-15.7 35-20.6 19.3-9.5 39.9-16.5 57.2-19.3 13-2.1 33.6-1.5 44.6 1.4z"
-                            />
-                            <path d="M251.2 168.2c-7.2 14.5-18.1 35.5-24.2 46.8-11.4 21.1-22 42.3-22 44 0 .6.6 1 1.3 1 .7 0 3.2-4.3 5.7-9.6 2.4-5.3 8.9-18 14.5-28.3 5.6-10.2 16.6-31.2 24.3-46.6l14.2-28-.6 59c-.6 53.6-.4 61.7 1.5 88.5 1.1 16.2 2.6 42.5 3.1 58.5.6 15.9 1.5 33.5 2 38.9.6 5.5.7 10.3.3 10.6-.5.4-6.6 3.3-13.8 6.4C233.4 420 191 443.3 191 446c0 1.8 1.6 1.1 13.6-6.1 11.7-6.9 56-29.2 64-32.2l4.2-1.6 1.6 11.2c.8 6.2 1.7 12.3 1.8 13.6.2 1.4.9 2.6 1.6 2.9 1.6.5 1.6-3.3-.4-16.3-.8-5.9-1.3-11.2-1.1-11.9 1.5-3.8 42.3-15.2 66.9-18.7 15.7-2.3 47.1-3.2 53.1-1.6 2.4.7 2.8.5 2.5-1-.8-4.3-36.5-3.7-64.9 1.1-17.6 3-29.4 6.1-46.1 11.9l-12.7 4.4-.5-2.6c-.9-4.6-1.6-16.9-2.6-45.6-.6-15.4-1.9-41.1-3.1-57-2.1-31.3-2.6-69.7-1.3-117.6.7-28.4.2-36.9-2-36.9-.7 0-7.2 11.8-14.4 26.2z"
-                            />
-                        </svg>
-                    </div>
-                    <h3>wander the city <br> searching for frames</h3>
-                </div>
             </div>
-            <div class="flex selectFrame">
-                <div class="subtitle">
-                    <div class="svgNumber">
-                        <svg class="two" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 500 481">
-                            <path d="M305.3 2c-55.6 4.7-113.5 28.2-174.6 71.1-7.1 5-13 8.9-13.2 8.7-.6-.5 32.7-36.9 44.2-48.4 5.6-5.6 11.6-10.8 13.2-11.5 3.1-1.4 4.3-3.9 1.9-3.9-2.9 0-9 4.9-19.7 15.8-12.8 13.1-36.3 38.9-45.5 50-3.4 4-11 11.2-17.1 16C62.7 124.8 2 177.6 2 180.2c0 2.3 4.1-.8 20.2-15.2 27.3-24.5 71.5-62 73.2-62 .3 0-3.1 4.9-7.4 11-15 20.9-30.8 49.9-38.3 70-7.1 19.1-11 45.2-11 73-.1 38.7 5.8 64.5 21.7 96.6 10.8 21.6 19.2 34.1 35.8 53.3 15.4 17.9 25.7 26.7 43.9 37.6 39.4 23.5 72.8 32.9 120.9 34.2 23.7.6 35.1-.3 54.3-4.3 29.4-6.2 45.4-14.1 77.7-38.3 47.3-35.4 86-100.6 99.5-167.6 4.7-23.4 5.9-36.1 5.9-66 0-23.9-.3-30-2.2-42-5.6-35.6-14.9-60.4-32.7-87C437.7 35 399.1 10.3 354 3.5 341.6 1.7 318.2.9 305.3 2zM342 5.1c32.9 3 57.3 12.4 83.6 32 22.7 16.9 44.4 46.8 55.8 76.5 19.7 51.9 19.3 128.3-1 189.3-14.9 44.4-43 89.6-72.9 117.2-19.2 17.7-47.5 36.6-64.8 43.3-36 14-83.7 16.5-130.6 7-17.8-3.6-32.2-8.6-50.1-17.5-33-16.5-45.5-26.1-67.9-52.9-21.1-25.2-36.7-53.5-44.7-81.3-10.2-35.3-10.5-83.9-.8-121.3 6.2-24.2 26.3-61.6 48.9-91.3 8.5-11.2 9.9-12.6 22.6-21.9C143.8 66.7 177 46.5 200 35.3 249.1 11.5 298.5 1 342 5.1z"
-                            />
-                            <path d="M282 73.7c-17.1 3-37.3 9.9-55.5 19-12.9 6.5-19.5 10.8-19.5 12.8 0 2.1.4 2 7.2-2.6 16.2-11.1 45.7-22.1 70.3-26.5 10.5-1.8 30.4-1.8 39.7.1 22.8 4.7 37.3 20.2 44 47.3 3.1 12.3 3 37.3-.1 51.7-3.1 14.5-8.4 29.2-15.6 44-5.2 10.6-15.2 27.4-18.4 30.8-.4.4-3.8-.8-7.7-2.7-15.5-7.7-34.3-12.3-53.5-13.3-15-.7-25.8.6-38.4 4.8-23.6 7.8-41.4 25.4-56.1 55.4-7 14.4-14.4 35.1-14.4 40.5 0 5 3.9 10.3 9.7 13.1 5.8 2.9 17.5 3.7 26.7 1.9 9.4-1.8 31.2-9.3 40.4-13.8 25.9-12.7 65.7-46 86.6-72.4l6.8-8.7 6.2 4.1c3.3 2.3 10.7 7.7 16.4 12 9.8 7.4 12.2 8.8 12.2 7 0-1.7-14.5-13.2-27.2-21.6l-5.6-3.8 6.9-10.6c34.4-52.8 40.4-113.9 14.7-148.6-11.2-15.1-27.9-21.7-54.6-21.5-7 0-16.5.8-21.2 1.6zm4.5 164.8c11.5 1.9 24 5.4 33.6 9.4 12.2 5.1 12.1 4.9 6.9 11.7-12.8 16.5-27.8 31.4-49 48.3-22.8 18.3-37.1 26.5-58.5 33.6-15.3 5-21.9 6.5-30 6.5-9.6 0-14.2-1.5-18.9-6.1-3.7-3.7-3.8-4.2-3.3-8.7.8-6.5 7.7-25.3 14.2-38.3 16.8-34 37-51 66.8-56.4 9.8-1.8 27.4-1.8 38.2 0z"
-                            />
-                        </svg>
-                    </div>
-                    <h3>select frame</h3>
-                </div>
+            <div class="flex carousel-cell selectFrame">
+                <h3 class="step">select frame</h3>
                 <div class="frames processImage">
                     <img src="/styles/images/process/shelves.jpg" alt="">
                 </div>
             </div>
-            <div class="flex drawing">
+            <div class="flex carousel-cell drawing">
+                <h3 class="step">drawing</h3>
                 <div class=" processImage">
                     <img src="/styles/images/process/drawing2.jpg" alt="">
                 </div>
-                <div class="subtitle">
-                    <div class="svgNumber">
-                        <svg class="three" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 477 457">
-                            <path d="M207.8 2.1c-16.2 2.1-38.3 8.4-52.3 14.8-10.6 5-36.9 19.9-47.5 27.1-4.8 3.3-13.9 8-21 11-15.8 6.5-45.6 21-67 32.4C3 96.5.1 98.4 1.4 99.7c.4.4 4.6-1.4 9.4-4 23.1-12.6 77.9-39.3 78.8-38.4.2.1-4.9 4.9-11.3 10.6-19.6 17.7-31.7 33.7-44.8 59.7C18.9 156.3 10 191.9 10 221.2c0 13 1.7 25.2 5.5 40.3 4.4 17.6 9.1 29.8 19 50 13.3 26.9 22.4 39.9 43.9 62.2 29.2 30.5 56.2 50.6 83.7 62.3 5.2 2.2 10.3 4.5 11.4 5 3.7 1.6 28.9 8 41.5 10.5 28.3 5.5 52.8 5.8 78.2 1.1 33.2-6.2 50.6-15 76.8-38.8 37.6-34.1 58.5-64.5 79.5-115.3 11.6-28.1 19.8-54.9 24.1-79 2.4-13.8 2.5-39.8.1-51.8-6.6-32.7-20.8-57.1-45.4-77.7-37.4-31.3-99.1-59.2-149.8-67.7-14-2.3-62.7-2.6-77-.4-23.1 3.4-61 12.9-82 20.5-8.6 3.1-7 1.8 10.5-8.3 26.1-15.2 38.6-20.5 59.5-25.4 26-6.2 51.2-6 82.2.3 13.9 2.9 42.4 13.1 52 18.6 4.4 2.5 7.3 3.1 7.3 1.4 0-2.6-36.7-17.6-52-21.4-23.1-5.6-52.7-7.9-71.2-5.5zM271 24.6c30.4 3.5 65 14.8 103.4 34 17.1 8.5 27.7 15.1 41.7 25.5 21.8 16.5 34.3 31 43.9 51.2 20.7 43.5 16.5 90.5-14.7 165.6-20.3 48.9-42.1 79.7-80.3 113.4-25 22.1-41.5 29.9-77 36.4-14.9 2.7-47.5 2.5-64.3-.5-12.3-2.2-31.6-6.7-40.6-9.5l-4.3-1.3 12.3-9.9c17.6-14.1 34-27.8 52.4-44 8.8-7.7 21.9-19 29-25 52.2-43.8 80.6-75.4 96.5-107.4 4.9-9.8 5.3-14.1 1.8-20.3-8.5-15.5-30.4-15.7-94.3-1.3-45.7 10.3-51.8 11.6-53.9 11.3-1.8-.3-.8-1.7 6.4-9.1 4.6-4.9 14.1-13.4 21-19 37.1-30 68.7-60.4 74.6-71.9 2.4-4.6 1.3-12.1-2.4-16.7-4-5.1-10.4-7.9-22.8-10.2-29.8-5.3-61.8-2.9-111.2 8.6-13.1 3-24.2 5.5-24.5 5.5-.4 0-.7.7-.7 1.5s.4 1.5.9 1.5 9.4-2 19.7-4.4c41-9.6 57.2-11.9 84.4-12 22.4-.1 36 1.8 45 6.2 6.7 3.3 9.1 6.6 9.7 12.9.5 4.7.3 5.1-5.5 12.3-10.8 13.6-41.5 42.3-66.2 62-18.9 15.1-34.6 31.3-33.3 34.6.9 2.4 6.7 1.7 32.3-4.1 64.4-14.6 75.4-16.6 90.6-16.7 17.3 0 26.7 4.3 29.2 13.6.9 3.1.7 4.7-.9 9.2-2.6 6.8-13.3 24.4-22.9 37.6-9.8 13.6-41.6 45.3-66.9 66.8-10.7 9.1-28.9 24.8-40.5 34.9-19.3 16.8-41.7 35.4-57.2 47.4l-6.1 4.8-6.7-2.5c-15.9-6-38.2-19.3-55.6-33.2-11.8-9.5-41-38.9-50.7-51-9.5-12-15.6-22-24.8-40.4-25.1-50.2-30.3-89.6-18-137.4 4.5-17.9 9.3-30.4 17.7-46.6 12.9-25.1 24.9-40.8 44.2-57.9 19.7-17.4 19.2-17.1 42.9-24.9 59.8-19.7 99.6-25.1 146.7-19.6z"
-                            />
-                        </svg>
-                    </div>
-                    <h3>drawing</h3>
-                </div>
             </div>
-            <div class="flex transfer">
-                <div class="subtitle">
-                    <div class="svgNumber">
-                        <svg class="four" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 577 475">
-                            <path d="M248.5 3c-3.8.4-12.4.5-19 .2-13.7-.5-19.6.7-40.7 8.2-43.9 15.6-70.5 28.2-101.3 48-15.8 10.2-71.8 46-83.3 53.2-2.3 1.5-3 3.4-1.1 3.4 1.4 0 19.4-11.2 64.9-40.5 19-12.2 39.4-25 45.3-28.4 10.9-6.3 24.6-12.8 19.7-9.3-21.6 15.1-47.2 40.7-60.7 60.6-11.1 16.5-22.7 44.8-29.8 72.6-12.3 48.6-15.6 105.3-8.5 142.4 3 15.2 10.6 39.1 15.8 49 11.3 21.9 35.2 47.1 59.9 63 11.8 7.6 36.8 19.3 51.3 24 26 8.5 35.4 9.9 86.5 12.7 42.2 2.3 51.7 2.1 77.4-1.7 9.1-1.3 16.8-2.4 17.3-2.4.4 0 .8 2.7.8 5.9 0 6.3.6 9.1 2.1 9.1.5 0 .9-3.6.9-7.9v-8l5.8-1.1c13-2.6 38.4-10.7 54.7-17.5 13.8-5.7 50.8-24.7 63.4-32.5 23.5-14.6 49.3-36.5 63.5-53.9 19-23.3 33.6-54.5 39.8-85.1 2-10.2 2.3-14.2 2.3-36-.1-27.7-1.2-36.5-7-53.7-6.6-19.8-21.2-46.7-33.5-61.8-31.3-38.5-88-76-141-93.3-26.5-8.7-57.3-16.3-75.3-18.7-12.3-1.6-55.8-1.9-70.2-.5zm52.4 2c23.9 1.5 42.4 5.2 78 15.6 37.3 11 60 21.6 93.9 44.1 19.8 13.1 31.4 22.7 47.4 39.1 16 16.5 24.4 28.5 35.3 50.7 14.1 28.4 16.9 41.1 17 76 0 28.3-1.1 36-8.5 58.7-10.6 32.2-25.2 55.4-49.9 79-22.7 21.8-42.4 34.8-83.1 55.1-22.4 11.2-32.1 15.5-45.5 19.9-18.7 6.3-37 11.2-39 10.5-.8-.4-1.4-4-1.9-10.4-1.6-22.9-7.3-54.8-19.7-110.8-5.5-24.7-19.4-83.2-20.6-86.1-.7-1.9 9-2.9 27.7-2.9 18.4.1 26.6 1.7 38.8 7.7 4.5 2.2 6.6 2.8 7.4 2 2.5-2.5-18.7-10.6-32.6-12.3-8.6-1.1-27.4-.7-37.6.7l-4.5.6-5.4-21.8c-3-12.1-8.9-34.5-13.3-49.9-12.5-44.1-17.4-65.7-19-82.9-.2-1.6-.9-3.2-1.7-3.4-1.2-.4-1.3.9-.7 7.4 1.4 15.9 4.9 31.2 18.2 78 7.2 25.5 18.4 69.4 18.4 72 0 .7-1.9 1.8-4.2 2.4-19.1 4.7-57 17.8-78.2 27-17 7.2-36 14-39.6 14-5.7 0-7-1.4-7-7.8 0-3.1.5-7.5 1.1-9.7 1.7-6.3 12.6-29.8 26.7-57.6 23.8-47 46.4-110.4 48.8-136.3.6-6.5.5-7.8-.7-7.4-.9.3-1.7 2.9-2.2 7.4-1.6 14.6-8.8 39.4-20.9 71.9-9.2 24.6-16 40.1-28 63.5-12.3 24.1-23.9 49.4-26.3 57.2-.8 2.8-1.5 7.8-1.5 11 0 7.5 2.7 10.8 8.9 10.8 4.7 0 19.1-4.9 40.1-13.7 21.9-9.1 33.5-13.4 53.4-19.7 22-7 29.7-8.9 30.6-7.9 1 1.1 13.4 52 20.9 85.8 7.7 34.8 14.5 69 16.6 83.3 1.5 10.3 4.4 38.4 4.1 38.9-.6.7-37.2 5.3-46.6 5.9-11.8.6-82-2.8-95.3-4.6-26-3.7-56-14-79.5-27.3C105.4 419.8 94 411 80 397c-14.3-14.2-24.1-27.4-29.9-40.1-3.5-7.8-11.4-34.4-13.5-45.6-8-42.7-1.2-113.5 15.4-162.5 4.8-14.2 13.3-33.4 19-42.9 9.2-15.5 27-35.7 44.4-50.3C130.6 42.7 140.1 36.2 152 30c13.8-7.1 22.7-9.9 52.2-16.6 24.3-5.6 25.8-5.8 38.6-5.7 10.5.1 13.2-.2 13.2-1.3 0-1 2.6-1.4 11.3-1.7 6.1-.1 12.8-.4 14.7-.5 1.9-.1 10.4.3 18.9.8zm-88.8 3.6c-5.7 1.3-10.6 2.2-10.8 2-.7-.7 14.2-4.4 17.7-4.4 2.1 0-.6.9-6.9 2.4z"
-                            />
-                        </svg>
-                    </div>
-                    <h3>image transfer</h3>
-                </div>
+            <div class="flex carousel-cell transfer">
+                <h3 class="step">image transfer</h3>
                 <div class="processImage">
                     <img src="/styles/images/process/patterntransfer2.jpg" alt="">
                 </div>
             </div>
-            <div class="flex stitching">
+            <div class="flex carousel-cell stitching">
+                <h3 class="step">stitching</h3>
                 <div class=" processImage">
                     <img src="/styles/images/process/stitching2.jpg" alt="">
                 </div>
-                <div class="subtitle">
-                    <div class="svgNumber">
-                        <svg class="five" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 506 431">
-                            <path d="M265.5 2C189 6.8 132.3 28.9 43.5 88.7 23.8 102 18.8 106 21.8 106c.6 0 10.6-6.4 22.4-14.3 78.3-52.5 128.2-74.6 187.3-83.2 32.9-4.8 62.2-5.4 91.5-1.9 29.2 3.5 44.8 8.2 73.5 22.3 29.4 14.5 42.2 23.7 63.5 45.7 31.8 32.9 42.1 57.7 40.8 98.3-1 29.2-10 55.1-29.8 85.4-26 39.9-52.4 66-97.5 96.2-38.8 26-81.8 46-129.5 60.3-32.5 9.8-52.4 12.7-82.4 11.9-37.5-1-57.5-7-85.6-25.7-22.9-15.3-45.8-41.4-57.5-65.5-9.3-19.2-13.9-40.1-13.8-63 .1-40.3 9.2-73.4 28.3-102.4 20.8-31.7 42.1-55.5 72-80.5 24.9-20.9 43.8-33.8 63.5-43.6 19.4-9.6 56.1-22.8 80-28.7 12.1-3 22.4-5.8 22.8-6.2 2.5-2.4-3.2-1.6-23 3.2-36.8 9.1-79.1 26.2-104.1 42.1-31.1 19.8-68.9 53.3-89.9 79.7C22.4 176.2 10.9 199 5 233.9c-7.1 42-3.2 74.7 12.5 106.1 10.7 21.4 34.1 48 54.2 61.7 32.4 22.2 58.5 29.2 103.3 28 29.1-.8 48.6-4.7 87-17.6 75.1-25.3 145.1-69.5 185.5-117.1 22.1-26.1 40-55.2 47.9-77.7 6.6-19 8.1-28.4 8.1-49.8 0-19.8-.6-24.1-5.2-39.5-4.8-16.1-13.7-30.6-30.3-49.5-8.6-9.7-22.9-23-33-30.5-17.4-13.1-50-29.6-71.7-36.4-25-7.8-64.6-11.7-97.8-9.6z"
-                            />
-                            <path d="M226.6 85.9c-1.1 1.7.4 1.9 20.9 3.6 36.4 2.9 61.3 2.9 93 0 4.7-.4 4.6-.3-3.2 2.2-4.9 1.6-8.3 3.2-8.3 4 0 .7.3 1.3.6 1.3s7.5-2 16.1-4.5c8.5-2.5 16.1-4.5 16.9-4.5.8 0 1.4-.7 1.4-1.5 0-1.9-2.5-1.9-24.5 0-37.2 3.2-65.1 2.9-106.1-1.1-4.1-.4-6.4-.2-6.8.5zM213.6 95.8c-.3.5.1 5.6 1 11.3 2.4 15.7 1.4 50.8-2 73.3-1.4 9.3-2.6 19.3-2.6 22.2 0 9.1-1.1 9.4 47-11.1 46.6-19.8 55.7-22.6 74.2-22.7 15.1 0 24.4 3.6 28.3 11.3 1.7 3.2 1 6.1-3 11.3-2.4 3.1-3.1 3.4-11.8 4.5-33.1 4.2-64.3 14.6-105.7 35.2-31.8 15.9-67.4 38.1-90.5 56.5-12.5 10-34.6 31.2-37.7 36.3-2 3.1-2 3.5-.5 4.6 5.7 4.1 27.6-5.1 108.7-45.7 79.4-39.7 102.7-53.8 128.4-77.9l7.9-7.3 12.1.1c12.3.1 25.2 2.2 38.8 6.2 6.4 1.8 9.3 1.6 6.5-.7-1.6-1.3-14.2-4.7-24.7-6.7-4.7-.8-13.3-1.6-19.1-1.6l-10.7-.1 3-5.7c2.8-5.5 2.9-5.9 1.5-9.2-2.1-5.1-8.8-10.4-15.6-12.3-7.4-2.1-23.7-2.1-33.9 0-11.5 2.3-22.2 6.2-53.4 19.5-34.8 14.9-45.6 19.1-46.8 18.4-.5-.3-.7-2-.4-3.8.2-1.7 1.6-11.1 3-20.7 3.4-23.5 4.4-58.5 2-74-1.6-10-2.7-13.3-4-11.2zM345 203.2c-14.4 13.5-33.6 27.1-57 40.5-28.3 16.3-140.6 71.7-159.8 78.9-8.4 3.2-15.2 4.5-15.2 3.1 0-2.1 27.6-28.2 39.5-37.5 49.5-38.3 123.3-75.6 168.5-85.3 8.7-1.8 24.5-4.5 28.5-4.8.6 0-1.5 2.3-4.5 5.1z"
-                            />
-                        </svg>
-                    </div>
-                    <h3>stitching</h3>
-                </div>
             </div>
-            <div class="flex framing">
-                <div class="subtitle">
-                    <div class="svgNumber">
-                        <svg class="six" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 559 676">
-                            <path d="M322 2.1c-22.7 2.5-59.3 12.5-85.3 23.3-15 6.2-42.4 20.5-54.2 28.2-5.3 3.4-1.6-.3 8.3-8.7 14-11.7 32-23.5 39-25.5 3.1-.9 6.1-2 6.6-2.5 2.1-1.9-.7-2.1-6.9-.4-11.5 3.1-31 17.1-57.2 41-6 5.5-17.2 14.6-24.9 20.2-48.7 35.8-88.7 78-134.5 141.6C2.7 233.4.7 237 2.9 237c.5 0 5.6-6.6 11.5-14.8 43.6-60.8 82.7-102.5 129.1-138 9.4-7.2 9.8-7.4 6.3-3.2-23.9 28.4-33.8 42.3-50.1 69.6-22.6 38.1-32.3 62-43.6 107-11.8 46.9-15.5 79.8-13.3 118.2 5.1 88.2 31.3 164.7 74.1 217 10.6 12.8 30.7 32.7 41.1 40.4 25.6 19.1 55.4 32.8 86 39.4 11.5 2.5 33.4 2.5 44.7.1 16.2-3.5 32.3-9.6 53.8-20.4 34.6-17.3 60.6-40 88.6-77.3 28.9-38.5 67.2-109.8 89.6-166.9 25.3-64.4 36.5-114.9 36.7-165.1.1-37.5-5.1-70.3-15.9-99.6-5.6-15.3-21.6-46.7-29.2-57.4-14.5-20.3-44.5-47.7-64.1-58.7-12-6.7-40.2-17.1-56.7-20.9-18-4.1-52.4-6.2-69.5-4.3zm52.7 4.4C392.4 9 410 14 430.5 22.2c18.3 7.4 36.2 19.8 55.8 38.7 17.4 16.8 27.4 30.5 39 53.6 19.5 39.1 27.5 71.3 29.3 118 2.8 71-24.8 163.9-78.3 263.5-36 67.1-66.2 106.7-102.1 133.7-24 18.1-64.4 36.3-90.1 40.7-18.7 3.2-37.5 1.1-61.4-6.8-39.8-13.1-72.1-35.4-101.4-70.1-40.2-47.7-66.2-117.4-74.5-200-.7-7.2-1.2-24.4-1.2-38.5.1-35.8 3.2-57.1 14.9-102.5 9.6-37.3 18.6-60 35.5-89.6 21.4-37.5 38.7-61.5 62.4-86.5 9.8-10.4 19.5-17.3 43.1-30.6C237.8 25.3 285.2 9.3 322.6 5c10.4-1.2 39.2-.4 52.1 1.5z"
-                            />
-                            <path d="M360.2 89.2c-4.8 6.6-30.5 45.1-43.9 65.8-35.8 55.5-66.1 115.5-81.3 161-10.4 31.3-16.9 64.5-18.3 93.5l-.2 5-9 6.7c-7.9 5.8-11.5 9.9-8.8 9.8.4 0 4.6-2.9 9.3-6.5l8.5-6.4.7 9.8c3.2 47.7 24.6 82.4 59.2 96.3 7.8 3.1 8.6 3.3 21.6 3.2 12 0 14.4-.3 22-2.8 17.6-5.8 32.4-15.2 48.3-30.5 13-12.6 20.9-22.2 32.2-39.1 16.4-24.6 24.8-42.6 29.6-63.1 3.1-13.2 3.2-32 .1-40.1-3.5-9.6-10.6-18.5-16.5-20.7-4.2-1.6-26.3-1.3-35.6.4-38.6 7.4-92.1 34-149.5 74.5l-8.9 6.3.6-10.7c2.7-43.9 18.3-96.2 44.8-150.1 21.9-44.7 53.1-96.5 90-149.7 6-8.6 10.9-16.2 10.9-16.8 0-2.3-2.1-.7-5.8 4.2zm54 245.5c4 2 10.3 10.4 12.8 17 6.3 16.6 1.8 45-11.5 71.8-15.5 31.4-39.6 62.4-62 79.7-10.6 8.2-27.7 16.9-38.9 19.8-9.6 2.4-22.2 2.6-31 .4-7.5-1.9-19.1-8.1-27.5-14.6-20.4-16-34.2-47.2-35.7-80.8l-.5-12.5 4.3-2.9c46.5-31.6 58.2-38.9 83.4-51.7 23.6-11.9 47.8-21.3 65.9-25.5 14.5-3.3 34.9-3.7 40.7-.7z"
-                            />
-                        </svg>
-                    </div>
-                    <h3>framing</h3>
-                </div>
+            <div class="flex carousel-cell framing">
+                <h3 class="step">framing</h3>
                 <div class="processImage">
                     <img src="/styles/images/process/framing.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="flexContainer">
+        <div class="flexContainer completedSection">
             <div class="sectionHeader sectionBoth">
                 <h2 class="hidden">completed work</h2>
                 <div class="border">
@@ -210,10 +158,10 @@
                 </a>
             </div>
             <div class="item">
-                <a href="styles/images/completedworks/clevergirl.jpg" 
+                <a href="styles/images/completedworks/hooked.jpg" 
                 data-lightbox="completedWork" data-title="clever girl">
-                    <img src="styles/images/completedworks/clevergirl.jpg" alt="velociraptor face and the words clever girl">
-                    <p>clever girl</p>
+                    <img src="styles/images/completedworks/hooked.jpg" alt="embroidery of fishhook in a heart">
+                    <p>hooked</p>
                 </a>
             </div>
             <div class="item">
@@ -233,19 +181,11 @@
                 </a>
             </div>
             <div class="item">
-                <a href="styles/images/completedworks/moonandwaves.jpg"
-                data-lightbox="completedWork"
-                data-title="moon and waves">
-                    <img src="styles/images/completedworks/moonandwaves.jpg" alt="moon cycle and waves">
-                    <p>moon and waves</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="styles/images/completedworks/bigbadwolf.jpg"
-                data-lightbox="completedWork"
-                data-title="who's afraid of the big bad wolf">
-                    <img src="styles/images/completedworks/bigbadwolf.jpg" alt="little red riding hood with wolf on a leash">
-                    <p>who's afraid of the big bad wolf?</p>
+                <a href="styles/images/completedworks/knife.jpg"
+                    data-lightbox="completedWork"
+                    data-title="sharp little knife">
+                    <img src="styles/images/completedworks/knife.jpg" alt="knife with pretty flowers">
+                    <p>sharp little knife</p>
                 </a>
             </div>
             <div class="item">
@@ -258,44 +198,35 @@
                 </a>
             </div>
             <div class="item">
-                <a href="styles/images/completedworks/doyoulikeme.jpg"
-                data-lightbox="completedWork"
-                data-title="do you like me?">
-                    <img src="styles/images/completedworks/doyoulikeme.jpg" alt="embroidered note with checkboxes asking do you like me">
-                    <p>do you like me?</p>
-
+                <a href="styles/images/completedworks/ship.jpg" data-lightbox="completedWork" data-title="almost shipwreck">
+                    <img src="styles/images/completedworks/ship.jpg" alt="tiny ship and large waves">
+                    <p>almost shipwreck</p>
                 </a>
             </div>
             <div class="item">
-                <a href="styles/images/completedworks/haveaheart.jpg"
-                data-lightbox="completedWork"
-                data-title="have a heart">
-                    <img src="styles/images/completedworks/haveaheart.jpg" alt="hand holding a gold heart">
-                    <p>have a heart</p>
+                <a href="styles/images/completedworks/moonandwaves.jpg" data-lightbox="completedWork" data-title="moon and waves">
+                    <img src="styles/images/completedworks/moonandwaves.jpg" alt="moon cycle and waves">
+                    <p>moon and waves</p>
                 </a>
             </div>
             <div class="item">
                 <a href="styles/images/completedworks/idontcare.jpg"
                 data-lightbox="completedWork"
                 data-title="constance">
-                    <img src="styles/images/completedworks/idontcare.jpg" alt="cat next to the words I don't care">
-                    <p>constance</p>
+                    <img src="styles/images/completedworks/best.jpg" alt="">
+                    <p>the beast you've made of me</p>
                 </a>
             </div>
             <div class="item">
-                <a href="styles/images/completedworks/knife.jpg"
-                data-lightbox="completedWork"
-                data-title="sharp little knife">
-                    <img src="styles/images/completedworks/knife.jpg" alt="knife with pretty flowers">
-                    <p>sharp little knife</p>
-                </a>
+                    <a href="styles/images/completedworks/heartweapon.jpg" data-lightbox="completedWork" data-title="your heart is a weapon the size of your first">
+                        <img src="styles/images/completedworks/heartweapon.jpg" alt="your heart is a weapon the size of your fist">
+                        <p>your heart is a weapon the size of your fist</p>
+                    </a>
             </div>
             <div class="item">
-                <a href="styles/images/completedworks/medusa.jpg"
-                data-lightbox="completedWork"
-                data-title="medusa">
-                    <img src="styles/images/completedworks/medusa.jpg" alt="medusa">
-                    <p>medusa</p>
+                <a href="styles/images/completedworks/ladiesinlove.jpg" data-lightbox="completedWork" data-title="ladies in love">
+                    <img src="styles/images/completedworks/ladiesinlove.jpg" alt="two stick ladies with large hearts">
+                    <p>ladies in love</p>
                 </a>
             </div>
             <div class="item">
@@ -307,85 +238,24 @@
                 </a>
             </div>
             <div class="item">
-                <a href="styles/images/completedworks/florencefoxprey.jpg"
-                data-lightbox="completedWork"
-                data-title="eating habits">
-                    <img src="styles/images/completedworks/florencefoxprey.jpg" alt="fox with text that reads Florence Fox shakes her prey until its dead or ready to be disemboweled">
-                    <p>eating habits</p>
+                <a href="/styles/images/completedworks/threeofswords.jpg" data-lightbox="completedWork" data-title="three of swords">
+                    <img src="styles/images/completedworks/threeofswords.jpg" alt="tiny heart with three pins in it">
+                    <p>three of swords</p>
                 </a>
             </div>
             <div class="item">
-                <a href="styles/images/completedworks/dfwmheart.jpg"
-                data-lightbox="completedWork"
-                data-title="don't fuck with me">
-                    <img src="styles/images/completedworks/dfwmheart.jpg" alt="anatomical heart and the words don't fuck with me">
-                    <p>don't fuck with me</p>
-
-                </a>
-            </div>
-            <div class="item">
-                <a href="styles/images/completedworks/hooked.jpg"
-                data-lightbox="completedWork"
-                data-title="hooked">
-                    <img src="styles/images/completedworks/hooked.jpg" alt="anatomical heart with a fishhook in it">
-                    <p>hooked</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="styles/images/completedworks/housewarming.jpg"
-                data-lightbox="completedWork"
-                data-title="housewarming">
+                <a href="styles/images/completedworks/housewarming.jpg" data-lightbox="completedWork" data-title="housewarming">
+                    s
                     <img src="styles/images/completedworks/housewarming.jpg" alt="embroidery of votive candle, rosemary and roses">
                     <p>housewarming</p>
                 </a>
             </div>
             <div class="item">
-                <a href="styles/images/completedworks/dfwmpatch.jpg"
+                <a href="styles/images/completedworks/florencefoxprey.jpg"
                 data-lightbox="completedWork"
-                data-title="don't fuck with me">
-                    <img src="styles/images/completedworks/dfwmpatch.jpg" alt="patch that says don't fuck with me">
-                    <p>don't fuck with me</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="styles/images/completedworks/ladiesinlove.jpg"
-                data-lightbox="completedWork"
-                data-title="ladies in love">
-                    <img src="styles/images/completedworks/ladiesinlove.jpg" alt="two stick ladies with large hearts">
-                    <p>ladies in love</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="styles/images/completedworks/sylviaspider.jpg"
-                data-lightbox="completedWork"
-                data-title="sylvia spider">
-                    <img src="styles/images/completedworks/sylviaspider.jpg" alt="text reads sylvia spider was hungry; simon spider was delicious">
-                    <p>sylvia spider</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="styles/images/completedworks/ship.jpg"
-                data-lightbox="completedWork"
-                data-title="almost shipwreck">
-                    <img src="styles/images/completedworks/ship.jpg" alt="tiny ship and large waves">
-                    <p>almost shipwreck</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="/styles/images/completedworks/sweetdreams.jpg"
-                data-lightbox="completedWork"
-                data-title="sweet dreams"
-                >
-                    <img src="/styles/images/completedworks/sweetdreams.jpg" alt="a bed with two eyes shining underneath">
-                    <p>sweet dreams</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="/styles/images/completedworks/threeofswords.jpg"
-                data-lightbox="completedWork"
-                data-title="three of swords">
-                    <img src="styles/images/completedworks/threeofswords.jpg" alt="tiny heart with three pins in it">
-                    <p>three of swords</p>
+                data-title="eating habits">
+                    <img src="styles/images/completedworks/florencefoxprey.jpg" alt="fox with text that reads Florence Fox shakes her prey until its dead or ready to be disemboweled">
+                    <p>eating habits</p>
                 </a>
             </div>
             <div class="item">
@@ -396,6 +266,20 @@
                     <p>thump thump</p>
                 </a>
             </div>
+            <div class="item">
+                <a href="/styles/images/completedworks/sweetdreams.jpg" data-lightbox="completedWork" data-title="sweet dreams">
+                    <img src="/styles/images/completedworks/sweetdreams.jpg" alt="a bed with two eyes shining underneath">
+                    <p>sweet dreams</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="styles/images/completedworks/brownies.jpg" data-lightbox="completedWork" data-title="brownies">
+                    <img src="styles/images/completedworks/brownies.jpg" alt="brownie recipe">
+                    <p>delicious</p>
+                </a>
+            </div>
+
+
         </div>
         <div class="flexContainer">
             <div class="sectionHeader sectionBoth">
@@ -412,25 +296,28 @@
             </div>
         </div>
         <form action="https://formspree.io/hello@lindsayw.io" method="POST">
-            <label for="text">name</label>
-            <input type="text" name="name">
-
-            <label for="email">email</label>
-            <input type="email" name="_replyto">
-
-            <label for="message">message</label>
-            <input type="textarea" name="message">
-
-            <input type="submit" value="Send">
+            <div class="contactFlex">
+                <div class="left">
+                    <label for="text">name</label>
+                    <input type="text" name="name">
+        
+                    <label for="email">email</label>
+                    <input type="email" name="_replyto">
+                    
+                    <input type="submit" value="Send">
+                </div>
+                <div class="right">
+                    <label for="message">message</label>
+                    <input type="textarea" class="textarea" name="message">
+                </div>            
+            </div>
         </form>
         
     </main>
     <footer></footer>
 <script src="js/main.js"></script>
 <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" -->
-
+<script src="/node_modules/flickity/dist/flickity.pkgd.min.js"></script>
 <script src="/node_modules/lightbox2/dist/js/lightbox.js"></script>
 </body>
 </html>
