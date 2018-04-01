@@ -132,7 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 footer {
-  background: linear-gradient(rgba(131, 137, 199, 0.35), rgba(131, 137, 199, 0.35)), url("/styles/images/footer.jpg");
+  background: linear-gradient(rgba(131, 137, 199, 0.35), rgba(131, 137, 199, 0.35)), url("../styles/images/footer.jpg");
   padding: 150px 50px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -231,7 +231,7 @@ a {
   margin: 0 auto; }
 
 header {
-  background: linear-gradient(rgba(131, 137, 199, 0.2), rgba(131, 137, 199, 0.2)), url("/styles/images/headerplaceholder.jpg");
+  background: linear-gradient(rgba(131, 137, 199, 0.2), rgba(131, 137, 199, 0.2)), url("../styles/images/headerplaceholder.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -315,6 +315,8 @@ nav ul {
 .left, .right {
   display: flex;
   flex-direction: column;
+  border: 3px solid mediumvioletred;
+  width: 50%;
   margin: 10px; }
 
 .right {

@@ -50,7 +50,7 @@ header {
     background:linear-gradient(
         rgba(131,137,199,.2),
         rgba(131, 137, 199, 0.2)),
-    url("/styles/images/headerplaceholder.jpg");
+    url("../styles/images/headerplaceholder.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -155,6 +155,8 @@ nav {
 .left, .right {
     display: flex;
     flex-direction: column;
+    border: 3px solid mediumvioletred;
+    width: 50%;
     margin: 10px;
     // width: 50%;
 }
