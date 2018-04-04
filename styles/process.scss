@@ -6,16 +6,32 @@
 }
 
 .carousel-cell {
-    margin: 0 30px;
+    // margin: 0 30px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     padding: 0 20px;
+    position: relative;
     img {
         height: 300px;
         padding: 0 10px;
     }
     h3 {
-        margin: 0 10px 30px;
+        margin: 5px 10px 30px;
+        padding: 2px 5px;
+        position: absolute;
+        background: linear-gradient(
+            rgba(255,255,255,.5),
+            rgba(255,255,255,.5));
+        bottom: 1%;
+        left: 15%;
+        border: 1px solid $black;
     }
 }
+
 
 .main-carousel {
     padding: 0 50px 0;
@@ -29,18 +45,17 @@
     justify-content: center;
     position: relative;
     width: 200px;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
-
-}
-
-.step:after {
-    content: url("/styles/images/process/arrow3.svg");
-    margin-top: 20%;
-    padding-top: 10px;
-    width: 100px;
-    position: absolute;
-    top: 50%;
+    
 }
 
 
+// .step:after {
+    //     content: url("/styles/images/process/arrow3.svg");
+    //     margin-top: 20%;
+    //     padding-top: 10px;
+    //     width: 100px;
+    //     position: absolute;
+    //     top: 50%;
+    // }
