@@ -58,6 +58,7 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     border: 15px solid $backgroundColour;
+    margin-bottom: 100px;
     a {
         text-decoration: none;
         color: $mainLight;
@@ -77,8 +78,6 @@ header {
 
 nav {
     svg {
-        // fill: cyan;
-        // stroke: darkcyan;  
         stroke-width: 3px;
         margin-top: 10px;
     }
@@ -95,7 +94,6 @@ nav {
     border: 1px solid; 
     border-color: lighten(#30343f, 50);
     margin: 0 auto;
-    // position: absolute;
 }
 
 .flexContainer {
@@ -118,16 +116,41 @@ nav {
     margin-top: 4px;
 }
 
+.welcomeBlurb {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    // padding: 15px 8px;
+    p {
+        padding: 5px;
+    }
+    h2 {
+        font-family: $copyFont;
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 5px;
+    }
+}
+
+.customAbout {
+    font-size: 16px;
+}
+
 .sectionSVG {
     position: absolute;
 
 }
 
-.about {
-    width: 500px;
-    left: -38%;
-    top: 36%;
-}
+// .about {
+//     width: 500px;
+//     left: -38%;
+//     top: 36%;
+// }
 
 .process {
     width: 550px;
@@ -137,7 +160,7 @@ nav {
 
 .completedWork {
     width: 700px;
-    left: -62%;
+    left: -49%;
     top: 23%;
 }
 
@@ -145,6 +168,76 @@ nav {
     width: 500px;
     left: -30%;
     top: 18%
+}
+
+
+@media (max-width: 740px) {
+    .completedWork {
+        width: 570px;
+        left: -36%;
+        top: 35%;
+    }
+}
+
+@media (max-width:550px) {
+    .process {
+        width: 400px;
+        left: -14%;
+        top: 17%;
+    }
+
+    .completedWork {
+        width: 490px;
+        left: -28%;
+        top: 38%;
+    }
+
+    .contact {
+        width: 430px;
+        left: -24%;
+        top: 25%;   
+    }
+}
+
+@media (max-width: 480px) {
+    .completedWork {
+        width: 400px;
+        left: -15%;
+        top: 43%;
+    }
+}
+
+@media (max-width:400px) {
+    .process {
+        width: 300px;
+        left: -8%;
+        top: 32%;
+    }
+    .border {
+        width: 230px;
+    }
+    .borderInside {
+        width: 220px;
+    }
+    .completedWork {
+        left: -23%;
+        width: 350px;
+    }
+    .contact {
+    width: 360px;
+    left: -30%;
+    top: 33%;
+}
+
+}
+
+
+
+
+
+.contactHeader {
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 .contactFlex {
@@ -160,9 +253,6 @@ nav {
     // width: 50%;
 }
 
-.right {
-    width: 50%;
-}
 
 .typeHere:not(:last-of-type) {
     height: 50px;
@@ -175,6 +265,23 @@ form {
     flex-direction: column;
     font-family: $copyFont;
     font-size: 16px;
+    margin-bottom: 80px;
+}
+
+input, label {
+    margin: 8px 0;
+}
+
+.sendButton {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 7px 0 3px;
+    border: double;
+    &:hover {
+        background: lighten(grey, 10);
+        color: #ffffff;
+    }
 }
 
 .flickity-page-dots {
@@ -186,13 +293,30 @@ form {
     flex-direction: column;
     align-items: center;
     font-size: 18px;
-    padding: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    p {
+        padding: 10px;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .svg-inline--fa{
     font-size: 28px;
+    margin: 10px;
 }
+
+.sold:after {
+    content: "      (sold)";
+    color: grey;
+
+}
+
+
 
 
 

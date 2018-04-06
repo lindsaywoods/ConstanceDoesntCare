@@ -5,9 +5,33 @@ footer {
         rgba(131,137,199,.35),
         rgba(131, 137, 199, 0.35)),
     url("../styles/images/footer.jpg");
-    padding: 150px 50px;
+    padding: 300px 0px 0;
     background-size: cover;
     background-repeat: no-repeat;
     border: 15px solid $backgroundColour;
-    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    p {
+        color: $black;
+        padding: 5px 15px 0 ;
+        background-color: $backgroundColour;
+        font-size: 14px;
+    }
+    a {
+        text-decoration: none;
+        color: grey;
+        &:hover {
+            color: $black;
+        }
+    }
 }
+
+// .footerBorder {
+//     border: 1px solid;
+//     border-color: lighten(#30343f, 50);
+//     background: $backgroundColour;
+//     opacity: .5;
+//     // margin: 10px;
+//     padding: 5px;
+// }
